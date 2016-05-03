@@ -1,5 +1,7 @@
 package com.example.admin.calandburn;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -92,9 +94,13 @@ public class ReportActivity extends AppCompatActivity {
         whereCalaryCursor.moveToFirst();
         int intCount = whereCalaryCursor.getCount();
         String[] calFoodStrings = new String[intCount];
+        final String[] idStrings = new String[intCount];
+
         double sumCalFood = 0;
 
         for (int i=0;i<intCount;i++) {
+
+            idStrings[i] = whereCalaryCursor.getString(whereCalaryCursor.getColumnIndex(MyManage.column_id));
 
             calFoodStrings[i] = whereCalaryCursor.getString(whereCalaryCursor.getColumnIndex(MyManage.column_CalFood));
             sumCalFood = sumCalFood + Double.parseDouble(calFoodStrings[i]);
@@ -107,8 +113,39 @@ public class ReportActivity extends AppCompatActivity {
 
         calaryListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                sqLiteDatabase.execSQL("DELETE FROM calary_table WHERE _id='6'");
+            public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(ReportActivity.this);
+                builder.setIcon(R.drawable.icon_myaccount);
+                builder.setTitle("Confirm Delete");
+                builder.setMessage("คุณต้องการลบ จริงๆ หรือ");
+                builder.setCancelable(false);
+                builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                        SQLiteDatabase sqLiteDatabase = openOrCreateDatabase(MyOpenHelper.DATABASE_NAME,
+                                MODE_PRIVATE, null);
+                        sqLiteDatabase.delete(MyManage.table_calary, MyManage.column_id + "=" + idStrings[position], null);
+
+                        readAllCalary();
+
+                        dialogInterface.dismiss();
+
+                    }   // onClick
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+                builder.show();
+
+
+
+
+               // sqLiteDatabase.execSQL("DELETE FROM calary_table WHERE _id='6'");
 
 
                 return true;

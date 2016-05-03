@@ -16,6 +16,7 @@ public class MyManage {
     public static final String table_calary = "calary_table";
     public static final String table_burn = "burn_table";
 
+    public static final String column_id = "_id";
     public static final String column_Food = "Food";
     public static final String column_Amount = "Amount";
     public static final String column_CalFood = "CalFood";
