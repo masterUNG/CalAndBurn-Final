@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.calandburn.CalActivity"
+    android:background="@drawable/bg4">
+
+    <ImageView
+        android:id="@+id/banner2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:onClick="onClick"
+        android:layout_height="50dp"
+        android:src="@drawable/banner2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BMIscrollView"
+        android:layout_below="@+id/banner2"
+        android:layout_margin="20dp" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/h1_bmi"
+                android:id="@+id/textView34"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmi"
+                android:id="@+id/textView49"
+                android:layout_marginTop="15dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/formula_bmi"
+                android:id="@+id/textView50"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmi2"
+                android:id="@+id/textView51"
+                android:layout_marginTop="15dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmi3"
+                android:id="@+id/textView52"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmi4"
+                android:id="@+id/textView53"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmi5"
+                android:id="@+id/textView54"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmi6"
+                android:id="@+id/textView55"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmi7"
+                android:id="@+id/textView56"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmi8"
+                android:id="@+id/textView57"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

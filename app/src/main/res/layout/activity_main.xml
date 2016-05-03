@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg4">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:src="@drawable/banner" />
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/food1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:onClick="onCalClick"
+            android:background="@drawable/food"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/food2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_label"
+            android:layout_below="@+id/food1"
+            android:layout_marginLeft="70dp"/>
+
+
+
+        <ImageButton
+            android:id="@+id/burn1"
+            android:layout_width="64dp"
+            android:onClick="onBurnClick"
+            android:layout_height="64dp"
+            android:background="@drawable/burn"
+            android:layout_marginRight="60dp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/burn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/burn_label"
+            android:layout_below="@+id/burn1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp" />
+
+        <ImageButton
+            android:id="@+id/report1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:onClick="onReportClick"
+            android:background="@drawable/report"
+            android:layout_below="@+id/food2"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/report2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/report_label"
+            android:layout_below="@+id/report1"
+            android:layout_marginLeft="60dp"/>
+
+
+
+        <ImageButton
+            android:id="@+id/infor1"
+            android:onClick="onInforClicked"
+            android:layout_width="64dp"
+            android:layout_below="@+id/burn2"
+            android:layout_marginTop="50dp"
+            android:layout_height="64dp"
+            android:background="@drawable/information"
+            android:layout_marginRight="60dp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/infor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/information_label"
+            android:layout_below="@+id/infor1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="62dp" />
+
+        <ImageButton
+            android:id="@+id/pro1"
+            android:layout_width="64dp"
+            android:layout_below="@+id/infor2"
+            android:onClick="onProfileClicked"
+            android:layout_marginTop="50dp"
+            android:layout_height="64dp"
+            android:background="@drawable/profile"
+            android:layout_marginRight="60dp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/pro2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_label"
+            android:layout_below="@+id/pro1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

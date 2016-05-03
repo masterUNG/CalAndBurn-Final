@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.admin.calandburn.UpdateBurnTABLE"
+    android:background="@drawable/bg5">
+
+    <ImageView
+        android:id="@+id/banner2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="onMainMenuClick"
+        android:src="@drawable/banner2" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/banner2"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView19"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView24"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Hour :"
+                android:id="@+id/textView20"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText5"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/hour"
+                android:id="@+id/textView21"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Minus :"
+                android:id="@+id/textView22"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText6"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/min"
+                android:id="@+id/textView23"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:onClick="clickSaveUpdate" />
+</RelativeLayout>

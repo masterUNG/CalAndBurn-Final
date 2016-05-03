@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.calandburn.Information"
+    android:background="@drawable/bg4"
+    android:clickable="false">
+
+    <ImageView
+        android:id="@+id/banner2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="onMainMenuClick"
+        android:src="@drawable/banner2" />
+
+    <LinearLayout
+        android:id="@+id/bmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onBMIClick"
+            android:text="BMI"
+            android:textSize="25dp"
+            android:textColor="@android:color/black"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bmr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onBMRClick"
+            android:text="BMR"
+            android:textSize="25dp"
+            android:textColor="@android:color/black"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmr"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onAboutClick"
+            android:text="About"
+            android:textSize="25dp"
+            android:textColor="@android:color/black"
+            android:clickable="false" />
+    </LinearLayout>
+
+</RelativeLayout>

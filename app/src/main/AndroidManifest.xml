@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.calandburn">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile" />
+        <activity
+            android:name=".InputProfile"
+            android:label="@string/title_activity_input_profile" />
+        <activity
+            android:name=".Information"
+            android:label="@string/title_activity_information" />
+        <activity
+            android:name=".CalActivity"
+            android:label="@string/title_activity_cal" />
+        <activity
+            android:name=".BurnActivity"
+            android:label="@string/title_activity_burn" />
+        <activity
+            android:name=".ReportActivity"
+            android:label="@string/title_activity_report" />
+        <activity android:name=".UpdateBurnTABLE" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".InfoBMI" />
+        <activity android:name=".HisFoodData" />
+        <activity android:name=".SearchFood" />
+        <activity android:name=".SelectCakeFood" />
+        <activity android:name=".SearchShowFood" />
+        <activity android:name=".infoBMR" />
+        <activity android:name=".listviewShowSearch" />
+        <activity android:name=".ShowDateHisFood" />
+        <activity android:name=".SelectDrinkFood"></activity>
+    </application>
+
+</manifest>

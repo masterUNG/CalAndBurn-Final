@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.calandburn.infoBMR">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:onClick="onClick"
+        android:layout_height="50dp"
+        android:src="@drawable/banner2"
+        android:id="@+id/imageView11" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4"
+        android:layout_below="@+id/imageView10"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/h1_bmr"
+                android:id="@+id/textView58"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmr"
+                android:id="@+id/textView59"
+                android:layout_marginTop="15dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bmr_male"
+                android:id="@+id/textView60"
+                android:layout_marginTop="15dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/formula_bmr_male"
+                android:id="@+id/textView61"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bmr_female"
+                android:id="@+id/textView62"
+                android:layout_marginTop="15dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/formula_bmr_female"
+                android:id="@+id/textView63"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmr2"
+                android:id="@+id/textView64"
+                android:layout_marginTop="15dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmr3"
+                android:id="@+id/textView65"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmr4"
+                android:id="@+id/textView66"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmr5"
+                android:id="@+id/textView67"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmr6"
+                android:id="@+id/textView68"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_bmr7"
+                android:id="@+id/textView69"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
